@@ -57,7 +57,7 @@ const SubjectsList = () => {
           size: 300,
           header: () => <p className="column-title">Subject Name</p>,
           cell: ({ getValue }) => (
-            <span className="text-forground">{getValue<string>()}</span>
+            <span className="text-foreground">{getValue<string>()}</span>
           ),
           filterFn: "includesString",
         },

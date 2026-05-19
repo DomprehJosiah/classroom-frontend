@@ -1,4 +1,5 @@
 import type { Subject } from "@/types/Subject";
+import { DEPARTMENTS_OPTIONS } from "@/constants";
 
 export const subjectsMockData: Subject[] = [
   {
@@ -77,7 +78,7 @@ export const subjectsMockData: Subject[] = [
     name: "Data Structures & Algorithms",
     department: "computer-science",
     description:
-      "Analysis of arrays, linked lists, stacks, queues, trees, graphs, and core sorting/searching sorting logic.",
+      "Analysis of arrays, linked lists, stacks, queues, trees, graphs, and core sorting/searching logic.",
     created_at: "2026-01-25T13:00:00Z",
     updated_at: "2026-01-25T13:00:00Z",
   },
@@ -202,15 +203,3 @@ export const subjectsMockData: Subject[] = [
     updated_at: "2026-01-12T16:00:00Z",
   },
 ];
-
-const DEPARTMENTS = [
-  "Computer Science",
-  "Statistics",
-  "Hospitality",
-  "Artificial Intelligence",
-];
-
-export const DEPARTMENTS_OPTIONS = DEPARTMENTS.map((dept) => ({
-  label: dept,
-  value: dept.toLowerCase().replace(/\s+/g, "-"),
-}));
